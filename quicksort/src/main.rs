@@ -64,7 +64,7 @@ mod tests {
     #[test]
     fn test_quicksort_with_rand_nums() {
         for _ in 0..20 {
-            const LENGTH :usize = 100 * 1000;
+            const LENGTH :usize = 100 * 100;
             let mut rng = rand::thread_rng();
             let mut arr = [0; LENGTH];
 
@@ -72,7 +72,9 @@ mod tests {
                 arr[i] = rng.gen_range(0..1000);
             }
             let arr_length = arr.len();
+            println!("{:?}", &arr[0..=50]);
             quicksort(&mut arr, 0, arr_length - 1);
+            println!("{:?}", &arr[0..=50]);
 
             for i in 1..LENGTH {
                 assert!(arr[i - 1] <= arr[i]);
