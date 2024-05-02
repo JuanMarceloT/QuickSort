@@ -16,11 +16,7 @@ Unix/Linux:
   ```
 Windows:
 
-    Download the Rust installer.
-
-    Run the installer and follow the on-screen instructions.
-
-    Restart your computer to apply the changes.
+    Go to https://www.rust-lang.org/tools/install and follow the instructions for installing Rust.
 
 2. **Clone the repository:**
   ```bash
@@ -34,7 +30,7 @@ Windows:
   cargo run
 
 ```
- This will run the Quicksort algorithm on a sample array and print the sorted array.f i you want you can implement some way to get the numbers from a file or just put your numbers int arr variable.
+ This will run the Quicksort algorithm on a sample array and print the sorted array. If you want, you can implement some way to get the numbers from a file or just put your numbers in the 'arr' variable.
 
 
 ## How to Test
@@ -46,5 +42,5 @@ To run tests for the Quicksort implementation, use the following command:
 cargo test -- --nocapture
 ```
 
-The --nocapture flag is used to show any print statements in the test output. and will run 20 times with 100k random values and will print the first 50 elements from the array unsorted and sorted for each time 
+The --nocapture flag is used to show any print statements in the test output. The test will run 20 times with 100,000 random values and will print the first 50 elements from the array (both unsorted and sorted) for each run.
 
